@@ -9,9 +9,8 @@ jobs:
 
     steps:
     - name: Enable RDP
-      run: |
-        net user runneradmin Passw0rd!
-        net localgroup administrators runneradmin /add
+  run: |
+    net user runneradmin Passw0rd!
 
     - name: Download Ngrok
       run: |
